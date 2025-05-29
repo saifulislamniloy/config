@@ -7,8 +7,8 @@ echo "🛠️ Starting terminal environment setup..."
 # 0. Install Git if not installed
 if ! command -v git >/dev/null 2>&1; then
   echo "📦 Installing Git..."
-  sudo apt update
-  sudo apt install -y git
+  apt update
+  apt install -y git
 else
   echo "✅ Git already installed."
 fi
@@ -16,7 +16,7 @@ fi
 # 1. Install Zsh if not installed
 if ! command -v zsh >/dev/null 2>&1; then
   echo "📦 Installing Zsh..."
-  sudo apt install -y zsh
+  apt install -y zsh
 else
   echo "✅ Zsh already installed."
 fi
